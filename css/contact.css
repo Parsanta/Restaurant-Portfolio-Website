@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=The+Nautigal:wght@700&display=swap');
+:root {
+    --font: 'The Nautigal', cursive;
+}
+
+.contact-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c1315;
+    animation: load 5s;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact {
+    display: flex;
+    width: 1500px;
+    height: 700px;
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    word-spacing: 30px;
+    line-height: 2;
+    background-color: #302c2c;
+}
+
+.border {
+    height: 500px;
+    width: 80%;
+    border: dotted;
+    border-color: #bea178;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 70%;
+    align-items: center;
+    padding-top: 5rem;
+    word-spacing: 30px;
+    line-height: 1;
+    background-color: white;
+    color: black;
+}
+
+.head {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    color: #bea178;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+input {
+    width: 280px;
+    padding: 0px 3px 15px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid rgb(58, 56, 56);
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 1px solid rgb(250, 248, 248);
+}
+
+.book-btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bttn {
+    display: block;
+    width: 250px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bttn:hover {
+    color: #bea178;
+    box-shadow: 10px 10px 0 #bea178;
+    top: 5px;
+    left: -5px;
+}
+
+@media screen and (max-width: 1340px) {
+    .contact-right {
+        display: none;
+    }
+    .contact-left {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .contact-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    .contact-left {
+        width: 100%;
+        padding: 50px;
+    }
+    input {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .contact-left {
+        width: 100%;
+        padding: 80px;
+    }
+    input {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .contact-left {
+        width: 100%;
+        padding: 80px;
+    }
+    input {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .contact-left {
+        width: 100%;
+        padding: 0px;
+    }
+    input {
+        width: 150px;
+    }
+}
